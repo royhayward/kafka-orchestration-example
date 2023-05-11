@@ -28,7 +28,7 @@ Steps:
 3. Stop the Orchestrator
 4. Start the Orchestrator
 
-Note: The original three services didn't have to change to accomidate the new service. Stoping and Starting the Orchestrator didn't impact the operations of these services as well. The only impact was a slight delay in the messages produced during this product monifications.
+Note: The original three services didn't have to change to accommodate the new service. Stopping and Starting the Orchestrator didn't impact the operations of these services as well. The only impact was a slight delay in the messages produced during this product modification.
 
 Example 3
 =========
@@ -41,9 +41,10 @@ No other services are impacted or need to be aware of this change.
 Step:
 1. Launch the Unit Event producer
 2. Modify the Reporting Service and uncomment out the Unit Event section.
-3. Modify the Orchestrator workflow logic.
-4. Stop the Orchestrator
-5. Start the orchestrator
+3. Stop and Start the Reporting service
+4. Modify the Orchestrator workflow logic.
+5. Stop the Orchestrator
+6. Start the orchestrator
 
 Note, The messages from the Unit Event producer were processed as soon as the Orchestrator started looking for them. 
 The security workflow and services were not impacted outside of the restart of the orchestrator. 
